@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Breed</th>
+            <th>Location</th>    
+        </tr>
+    </thead>
+    @foreach($pets as $pet)
+        <tr>
+           <td>{{$pet->id}}</td>
+           <td>{{$pet->name}}</td>
+           <td>{{$pet->type}}</td>
+           <td>{{$pet->breed}}</td>
+           <td>{{$pet->location}}</td>
+    @endforeach
+</table>
